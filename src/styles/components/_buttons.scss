@@ -1,0 +1,18 @@
+.submit_btn {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    padding: 14px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: $Primary-color;
+    color: #FFF;
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+}

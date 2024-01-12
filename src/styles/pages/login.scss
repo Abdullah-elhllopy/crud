@@ -1,0 +1,103 @@
+.login_container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .login {
+        display: flex;
+        width: 400px;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 1rem;
+        background: #F9FAFB;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+
+        @media screen and (max-width: $small-devices) {
+            width: 90%;
+        }
+
+        .sign_in {
+            color: #344054;
+            font-family: $font-secondary;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 36px;
+        }
+
+        .invalid_card {
+            display: flex;
+            width: 100%;
+            padding: 10px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background: $error-background-color;
+
+            .invalid_text {
+                color: $error;
+                text-align: center;
+                font-family: $font-secondary;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .or {
+            gap: 15px;
+
+            .line {
+                height: 2px;
+                background: #E4E7EC;
+                flex: 1;
+                width: 143.5px;
+            }
+
+            span {
+                color: #98A2B3;
+                font-family: $font-secondary;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .haveNotAccount {
+            width: 100%;
+            justify-content: center;
+
+            span {
+                color: $logo-color;
+                text-align: center;
+                font-family: $font-secondary;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+
+                a {
+                    color: #197A89;
+                    cursor: pointer;
+                    font-family: $font-secondary;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
+}
+
+// .padding_small {
+//     @media screen and (max-width: $small-devices) {
+//         padding: 1rem;
+//     }
+// }

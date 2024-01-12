@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Black.otf') format('woff2'),
+        url('../font/AvenirLTStd-Book.otf') format('woff'),
+        url('../font/AvenirLTStd-Roman.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Typography
+$font: 'Avenir', sans-serif;
+$font-secondary: "Rubik", sans-serif;
+$font-initial-size: 1rem;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+//Colors
+$Primary-color: #26B7CD;
+$Black: #000;
+$Secondary-color: #F4656E;
+$White: #FFFF;
+$logo-color : #475467;
+$Muted-color: #818181;
+$sign-in : #344054;
+$error-background-color: rgba(246, 131, 131, 0.15);
+$error : #EA1515;
+//Breaking Points
+$small-devices: 600px;
+$portrait-tablets: 600px;
+$landscape-tablets: 768px;
+$large-laptops-desktops: 992px;
+$extra-large-laptops-desktops: 1200px;

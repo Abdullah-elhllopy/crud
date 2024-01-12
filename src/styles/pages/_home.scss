@@ -1,0 +1,166 @@
+:root {
+  font-family: $font;
+  font-size: $font-initial-size;
+  font-weight: $font-weight-400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $White;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 600px;
+    height: 175.325px;
+    flex-shrink: 0;
+  }
+}
+.form_data {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 1px #E4E7EC;
+
+  button {
+    width: 128px;
+    margin-top: 1.5rem;
+    @media screen and (max-width: $small-devices) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $small-devices) {
+    flex-direction: column;
+  }
+}
+
+.custom_table {
+  margin-top: 2.5rem;
+  thead {
+    tr {
+      th {
+        text-align: start;
+        width: 30%;
+        color: $logo-color;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        &::first-letter {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        width: 30%;
+        overflow: hidden;
+        color: $logo-color;
+        font-family: $font-secondary;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+      }
+    }
+  }
+
+  .custom_width {
+    width: fit-content;
+  }
+
+  .buttons_container {
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    .editButton {
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: 1px solid $Primary-color;
+      color: $Primary-color;
+      text-align: center;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      background: $White;
+      cursor: pointer;
+    }
+
+    .deleteButton {
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: $Secondary-color;
+      color: $White;
+      text-align: center;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      cursor: pointer;
+      border: none
+    }
+  }
+
+}
+
+.customExport{
+  position: absolute;
+  top: 34%;
+  right: 24px;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid $Primary-color;
+  color: $Primary-color;
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background: $White;
+  cursor: pointer;
+}

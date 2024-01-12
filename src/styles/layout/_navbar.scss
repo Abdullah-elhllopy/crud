@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  padding: 16px 24px 16px 23px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E4E7EC;
+  background: #FFF;
+
+  .logo {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    .logo_name {
+      color: $logo-color;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 2.4px;
+
+      .JAT {
+        color: $logo-color;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+      }
+    }
+  }
+
+  .userInfo {
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    .userName {
+      color: $logo-color;
+      font-family: $font-secondary;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .logout-container {
+    display: block;
+    position: fixed;
+    inset: 0;
+    min-height: 100vh;
+    z-index: 15;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .logout {
+    position: absolute;
+    top: 3.5rem;
+    right: 20px;
+    z-index: 25;
+    display: flex;
+    width: 137px;
+    padding: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    div {
+      display: flex;
+      padding: 6px 8px;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      cursor: pointer;
+      h2 {
+        color: $logo-color;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}
